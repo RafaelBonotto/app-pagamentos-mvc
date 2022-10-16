@@ -4,7 +4,7 @@ namespace Pagamentos.Mvc.Controllers
 {
     public class PagamentosController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Post()
             => View();
 
         //[HttpPost("Inserir")]

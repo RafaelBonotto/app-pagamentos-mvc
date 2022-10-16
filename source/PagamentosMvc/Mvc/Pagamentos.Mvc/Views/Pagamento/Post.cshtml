@@ -1,0 +1,65 @@
+﻿@model Pagamentos.Mvc.Models.PagamentoViewModel
+
+@{
+    ViewData["Title"] = "pagamentos/post";
+}
+
+<h1 class="display-4">NOVO PAGAMENTO</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Inserir">
+            <div class="form-group">
+                <label><strong>VALOR</strong></label>
+                <input asp-for="Valor" class="form-control" />
+                <span><strong asp-validation-for="Valor" class="text-danger"></strong></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label><strong>DATA DA ENTREGA</strong></label>
+                <input asp-for="Dt_entrega" class="form-control" />
+                <span asp-validation-for="Dt_entrega" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label><strong>DATA DO VENCIMENTO</strong></label>
+                <input asp-for="Dt_vencimento" class="form-control" />
+                <span asp-validation-for="Dt_vencimento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label><strong>NÚMERO DA PARCELA</strong></label>
+                <input asp-for="Num_parcela" class="form-control" />
+                <span asp-validation-for="Num_parcela" class="alert-danger"></span>
+            </div>
+            <div class="form-group">
+                <label><strong>QUANTIDADE DE PARCELAS</strong></label>
+                <input asp-for="Qtd_parcela" class="form-control" />
+                <span asp-validation-for="Qtd_parcela" class="alert-danger"></span>
+            </div>
+            <div class="form-group">
+                <label><strong>NÚMERO DA NOTA FISCAL</strong></label>
+                <input asp-for="Nota_fiscal" class="form-control" />
+                <span asp-validation-for="Nota_fiscal" class="alert-danger"></span>
+            </div>
+            <div class="form-group">
+                <label><strong>FORNECEDOR</strong></label>
+                <select asp-for="FornecedorDescricao" asp-items="@Model.FornecedoresBanco" class="form-control">
+                </select>
+                <span asp-validation-for="FornecedorDescricao" class="text-danger" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="SALVAR" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="" onClick="history.go(-1); return false;" class="btn btn-info btn-sm"> VOLTAR</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
