@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Pagamentos.Mvc.Models;
 
 namespace Pagamentos.Mvc.Controllers
 {
-    public class PagamentosController : Controller
+    public class PagamentoController : Controller
     {
-        public IActionResult Post()
-            => View();
+
+        public IActionResult Inserir() => View(new PagamentoViewModel());
 
         //[HttpPost("Inserir")]
         //public async Task<IActionResult> PostAsync([FromBody] PagamentoRequest req)
