@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "pagamento/post";
+    ViewData["Title"] = "pagamentos/post";
 }
 
 <h1 class="display-4">NOVO PAGAMENTO</h1>
@@ -39,15 +39,11 @@
                 <input asp-for="Nota_fiscal" class="form-control" />
                 <span asp-validation-for="Nota_fiscal" class="alert-danger"></span>
             </div>
-             <div class="form-group">
-                <label><strong>FORNECEDOR</strong></label>
-                <input asp-for="Fornecedor_id" class="form-control" />
-                <span asp-validation-for="Fornecedor_id" class="alert-danger"></span>
-            </div>
             <div class="form-group">
-                <label><strong>NÚMERO DA PARCELA</strong></label>
-                <input asp-for="Num_parcela" class="form-control" />
-                <span asp-validation-for="Num_parcela" class="alert-danger"></span>
+                <label><strong>FORNECEDOR</strong></label>
+                <select asp-for="FornecedorDescricao" asp-items="@Model.FornecedoresBanco" class="form-control">
+                </select>
+                <span asp-validation-for="FornecedorDescricao" class="text-danger" />
             </div>
             <div class="form-group">
                 <input type="submit" value="SALVAR" class="btn btn-success" />
