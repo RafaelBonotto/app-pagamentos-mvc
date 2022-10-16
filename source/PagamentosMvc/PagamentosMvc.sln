@@ -3,9 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Mvc", "1 - Mvc", "{0DA73CE7-DAF8-40CE-9FF4-07E4770AEB5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Aplicacao", "2 - Aplicacao", "{61F6DFAF-A254-4EC3-9F20-21B92E5AE03D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Dominio", "3 - Dominio", "{8A6C4290-BA3F-45AB-AA61-3BDDDCC67D98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{495974E9-4374-4A33-BD7F-096BB9DF0421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.Mvc", "Mvc\Pagamentos.Mvc\Pagamentos.Mvc.csproj", "{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.Aplicacao", "Aplicacao\Pagamentos.Aplicacao\Pagamentos.Aplicacao.csproj", "{4DBA181D-10F6-4A29-97C5-4DFB73F38768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.Dominio", "Dominio\Pagamentos.Dominio\Pagamentos.Dominio.csproj", "{F59C4BF3-7FD8-4F4E-9758-524563897383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pagamentos.Infra", "Infra\Pagamentos.Infra\Pagamentos.Infra.csproj", "{44067B04-BDFC-4080-A2A7-2537C37529B7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DBA181D-10F6-4A29-97C5-4DFB73F38768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DBA181D-10F6-4A29-97C5-4DFB73F38768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DBA181D-10F6-4A29-97C5-4DFB73F38768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DBA181D-10F6-4A29-97C5-4DFB73F38768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59C4BF3-7FD8-4F4E-9758-524563897383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59C4BF3-7FD8-4F4E-9758-524563897383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59C4BF3-7FD8-4F4E-9758-524563897383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59C4BF3-7FD8-4F4E-9758-524563897383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44067B04-BDFC-4080-A2A7-2537C37529B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44067B04-BDFC-4080-A2A7-2537C37529B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44067B04-BDFC-4080-A2A7-2537C37529B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44067B04-BDFC-4080-A2A7-2537C37529B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F8D1FE6-0E5A-42B5-8154-73AE4F5C41F3} = {0DA73CE7-DAF8-40CE-9FF4-07E4770AEB5A}
+		{4DBA181D-10F6-4A29-97C5-4DFB73F38768} = {61F6DFAF-A254-4EC3-9F20-21B92E5AE03D}
+		{F59C4BF3-7FD8-4F4E-9758-524563897383} = {8A6C4290-BA3F-45AB-AA61-3BDDDCC67D98}
+		{44067B04-BDFC-4080-A2A7-2537C37529B7} = {495974E9-4374-4A33-BD7F-096BB9DF0421}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {113FADAE-86F1-4255-A5A4-A1A607EFE490}
