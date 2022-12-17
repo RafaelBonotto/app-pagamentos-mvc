@@ -24,3 +24,8 @@ C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\Pagamen
 C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\Pagamentos.Mvc.pdb
 C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\Pagamentos.Mvc.genruntimeconfig.cache
 C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\ref\Pagamentos.Mvc.dll
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\staticwebassets\msbuild.Pagamentos.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\staticwebassets\msbuild.build.Pagamentos.Mvc.props
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Pagamentos.Mvc.props
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Pagamentos.Mvc.props
+C:\Users\rbonotto\Documents\Pessoal\Projetos\Git\appPagamentosMvc\source\PagamentosMvc\Mvc\Pagamentos.Mvc\obj\Debug\net6.0\staticwebassets.pack.json
