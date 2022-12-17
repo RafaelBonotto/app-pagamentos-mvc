@@ -8,13 +8,13 @@ namespace Pagamentos.Mvc.Controllers
 
         public IActionResult Inserir() => View(new PagamentoViewModel());
 
-        //[HttpPost("Inserir")]
-        //public async Task<IActionResult> PostAsync([FromBody] PagamentoRequest req)
+        //[HttpPost("inserir")]
+        //public async Task<IActionResult> PostAsync(PagamentoViewModel req)
         //{
-        //    InserirPagamentoResponse ret = new();
+        //    //InserirPagamentoResponse ret = new();
 
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(Helper.MensagemConcatenada(ModelState.GetErros()));
+        //    //if (!ModelState.IsValid)
+        //    //    return BadRequest();
 
         //    try
         //    {
