@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Pagamentos.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Pagamentos.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pagamentos.Dominio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Pagamentos.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../../Dominio/Pagamentos.Dominio/Pagamentos.Dominio.csproj",
+      "msbuildProject": "../../Dominio/Pagamentos.Dominio/Pagamentos.Dominio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Pagamentos.Dominio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\rbonotto\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rbonotto\\Documents\\Pessoal\\Projetos\\Git\\appPagamentosMvc\\source\\PagamentosMvc\\Dominio\\Pagamentos.Dominio\\Pagamentos.Dominio.csproj": {
+              "projectPath": "C:\\Users\\rbonotto\\Documents\\Pessoal\\Projetos\\Git\\appPagamentosMvc\\source\\PagamentosMvc\\Dominio\\Pagamentos.Dominio\\Pagamentos.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
